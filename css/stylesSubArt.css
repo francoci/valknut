@@ -1,0 +1,123 @@
+main .panel form .contCampos
+{
+	width: 60%;
+	height: 350px;
+	box-sizing: border-box;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 1em;
+	padding: 0.5em;
+
+	/*border: 1px solid black;*/
+}
+
+
+main .panel form .editImg
+{
+	width: 35%;
+	height: 350px;
+	box-sizing: border-box;
+	float: right;
+	overflow: hidden;
+	margin-bottom: 1em;
+	padding: 0.5em;
+
+	/*border: 1px solid black;*/
+}
+
+main .panel form .botonSubmit
+{
+	width: 5em;
+	height: 2.5em;
+	margin: 0.5em auto;
+	clear: both;
+}
+
+main .panel form .editImg h4
+{
+	font-family: 'Lato', sans-serif;
+	font-size: em;
+	color: white;
+	opacity: 0.6;
+	text-shadow: -1px 1px 2px black;
+	font-weight: normal;
+	text-align: center;
+
+	display: block;
+	margin: 0.5em auto;
+}
+
+main .panel form .editImg .contImg
+{
+	width: 200px;
+	height: 200px;
+	margin: 0.5em auto;
+}
+
+main .panel form .editImg img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	opacity: 0.5;
+}
+
+.contbtn
+{
+	width: 180px; 
+	height: 40px;
+	padding: 0.2em;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background-color: #3d3f2f;
+	text-align: center;
+  	font-family: 'Bree Serif', serif;
+  	font-size: 1em;
+  	box-sizing: border-box;
+
+  	margin: 1em auto 0.5em;
+}
+
+.contbtn .btn
+{
+	text-decoration: none;
+  	cursor: pointer;
+  	color: #D1CECD;
+  	line-height: 30px;
+  	vertical-align: middle;
+  	border: none;
+}
+
+.contbtn:hover
+{
+	box-shadow: 0 0 1px #2c3028;
+  	background-color: #24261c;
+  	text-shadow: 2px 1px black;
+
+  	transition: 0.7s;
+}
+
+.contbtn .btn:hover
+{
+	background-color: #24261c;
+  	text-shadow: 2px 1px black;
+
+  	transition: 0.7s;
+}
+
+.contMen
+{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.errorGen
+{
+	font-family: 'Lato', sans-serif;
+	color: #d6250a;
+	font-size: 1.3em;
+	text-shadow: -1px 1px 2px black;
+	margin: 0 auto;
+}

@@ -1,0 +1,332 @@
+.central
+{
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.central::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #707868;
+	opacity: 0.7;
+}
+
+.central::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #707868;
+	opacity: 0.7;
+}
+
+.central::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #3e423b;
+	opacity: 0.7;
+}
+
+
+.imagenArt
+{
+	width: 75%;
+	height: 400px;
+	margin: 2em auto 1em;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.imagenArt img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+h2
+{
+	/*position: relative;
+	top: -70%;*/
+	font-size: 2.5em;
+}
+
+.articulo
+{
+	width: 75%;
+	padding: 1em;
+	margin: 0 auto;
+	transform: translateY(-20px);
+}
+
+.articulo h3
+{
+	font-family: 'Bree Serif', serif;
+	font-size: 1.2em;
+	color: #ddd;
+
+	text-align: justify;
+	text-shadow: -1px 1px 5px black;
+
+	line-height: 30px;
+
+	margin: 0.5em 0;
+}
+
+.articulo p
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	color: #ddd;
+
+	text-align: justify;
+	text-shadow: -1px 1px 5px black;
+
+	line-height: 30px;
+}
+
+
+.contenedorComentario
+{
+	width: 75%;
+	height: auto;
+	margin: 0.5em auto 1em;
+}
+.agregCom
+{
+	width: 100%;
+}
+
+.agregCom label
+{
+	font-family: 'Bree Serif', serif;
+	font-size: 1.6em;
+	color: #ddd;
+
+	vertical-align: top;
+	
+	display: inline-block;
+
+	text-shadow: -1px 2px 3px black;
+
+	margin-bottom: 0.5em;
+	width: 100%;
+}
+
+.comentArea
+{
+	width: 100%;
+	height: 9em;
+	resize: none;
+
+	box-sizing: border-box;
+	padding: 0.4em 0.6em;
+	margin: 0.5em auto;
+
+	border: 1px solid #999;
+	border-radius: 5px;
+
+	background-color: rgba(221, 221, 221,0.5);
+	font-size: 1.3em;
+	text-align: justify;
+
+	box-shadow: 0 0 10px #4d5446;
+}
+
+.agregCom .error
+{
+	font-family: 'Lato', sans-serif;
+	color: #d6250a;
+	font-size: 1em;
+	text-shadow: -1px 1px 2px black;
+}
+	
+.agregCom input[type="submit"]
+{
+	width: 7em;
+	height: 3em;
+
+	padding: 0.2em;
+
+	border: none;
+	border-radius: 5px;
+	outline: none;
+
+	background-color: #54584D;
+	
+	text-align: center;
+
+  	font-family: 'Bree Serif', serif;
+  	font-size: 1em;
+
+  	text-decoration: none;
+  	color: #D1CECD;
+
+  	box-sizing: border-box;
+
+  	cursor: pointer;
+}
+
+.agregCom input[type="submit"]:hover
+{
+  	box-shadow: 0 0 1px #2c3028;
+  	background-color: #42443d;
+  	text-shadow: 2px 1px black;
+
+  	transition: 0.7s;
+}
+
+.agregCom .botonLink
+{
+	width: 7em;
+	height: 3em;
+
+	padding: 0.2em;
+
+	border: none;
+	border-radius: 5px;
+	outline: none;
+
+	background-color: #54584D;
+	
+	text-align: center;
+
+  	box-sizing: border-box;
+
+  	cursor: pointer;
+
+}
+
+.agregCom .botonLink .btnLogin
+{
+	font-family: 'Bree Serif', serif;
+  	font-size: 1.2em;
+
+  	text-decoration: none;
+  	color: #D1CECD;
+  	display: inline-block;
+  	width: 100%;
+  	height: 100%;
+  	padding: 0.4em 0;
+}
+
+.agregCom .botonLink:hover
+{
+	box-shadow: 0 0 1px #2c3028;
+  	background-color: #42443d;
+
+  	transition: 0.7s;
+}
+
+.agregCom .botonLink:hover .btnLogin
+{
+  	text-shadow: 2px 1px black;
+  	transition: 0.7s;
+}
+
+/*  
+
+	Otra opcion para desactivar el posteo de comentarios, 
+    desde el html deshabilito el boton de submit y con el 
+    selector disabled le pongo estilos       
+
+*/
+
+/*.agregCom input[type="submit"]:disabled 
+{
+  background-color: rgba(84, 88, 77, 0.4);
+  cursor: not-allowed;
+  box-shadow: 0 0 1px #2c3028;
+  text-shadow: 2px 1px black;
+}*/
+
+.comentarios
+{
+	width: 100%;
+	height: auto;
+	margin-top: 2em; 
+}
+
+.comentario
+{
+	border-top: 2px solid rgba(62, 66, 59,0.7);
+	padding: 1.5em 0.5em;
+	display: flex;
+}
+
+.comentario:last-child
+{
+	border-bottom: 2px solid rgba(62, 66, 59,0.7);
+}
+
+.comentario .imgUsr
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 20px black;
+	-moz-box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px black;
+	margin-top: 1em;
+}
+
+.comentario .texto
+{
+	width: 80%;
+	padding: 0.1em 1em 0.5em;
+}
+
+.comentario .texto p
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	color: #ddd;
+
+	text-align: justify;
+	text-shadow: -1px 1px 5px black;
+
+	line-height: 30px;
+}
+
+.comentario .texto h4
+{
+	font-family: 'Bree Serif', serif;
+	font-size: 1em;
+	color: #ddd;
+
+	text-align: justify;
+	text-shadow: -1px 1px 5px black;
+
+	line-height: 30px;
+
+	margin: 0 0 0.5em;
+}
+
+@media screen and (max-width: 480px)
+{
+	.agregCom label
+	{
+		line-height: 30px;
+	}
+
+	.imagenArt
+	{
+		height: 200px;
+	}
+
+	.central
+	{
+		overflow: hidden;
+	}
+
+	h2
+	{
+		font-size: 2em;
+		line-height: 30px;
+	}
+
+	.comentario .imgUsr
+	{
+		display: none;
+	}
+}

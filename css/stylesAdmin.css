@@ -1,0 +1,317 @@
+body
+{
+	background-color: #aeb77b;
+}
+
+nav
+{
+	width: 15%;
+	height: 100vh;
+	float: left;
+}
+
+.barraLateral
+{
+	background-color: #3d3f2f;
+	width: 100%;
+	height: 100%;
+}
+
+.contenedorPerfil
+{
+	width: 100%;
+	height: 180px;
+	padding: 0.5em;
+	box-sizing: border-box;
+	/*border: 1px solid white;*/
+
+	opacity: 0.6;
+}
+
+.contenedorPerfil:hover
+{
+	opacity: 1;
+	transition: 0.6s ease;
+}
+
+.contenedorPerfil:hover .imgPerfil img
+{
+	-moz-box-shadow: 0 0 20px black;
+	-webkit-box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px black;
+	transition: 0.6s ease;
+}
+
+.contenedorPerfil:hover h4
+{
+	text-shadow: -2px 1px black;
+	transition: 0.2s ease;
+}
+
+.imgPerfil
+{
+	width: 60%;
+	border-radius: 50%;
+	margin: 0.5em auto;
+}
+
+.imgPerfil img
+{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.contenedorPerfil h4
+{
+	color: white;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+
+	text-align: center;
+	margin: 0.2em auto;
+}
+
+.barraLateral ul
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 150px;
+}
+
+.barraLateral ul li
+{
+	height: 30%;
+	/*border: 1px solid white;*/
+	text-align: center;
+}
+
+.barraLateral ul li a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0.2em 0.4em;
+	box-sizing: border-box;
+	
+	color: white;
+	text-decoration: none;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+
+	background-color: #3d3f2f;
+	opacity: 0.8;
+}
+
+.barraLateral ul li a:hover 
+{
+	background-color: #1a1c18;
+	opacity: 1;
+  	text-shadow: 2px 1px black;
+  	transition: 0.8s;
+}
+
+.activo
+{
+	background-color: #1a1c18;
+	opacity: 1;
+}
+
+main
+{
+	float: left;
+	width: 60%;
+	height: 90vh;
+	margin: 1em 0 1em 10em;
+}
+
+main .panel
+{
+	width: 100%;
+	height: 100%;
+	/*border: 2px solid black;*/
+	padding: 1em;
+	box-sizing: border-box;
+	background-color: rgba(61, 63, 47,0.5); 
+	border-radius: 10px;
+}
+
+main .panel h3
+{
+	font-family: 'Lobster', cursive;
+	color: #ddd;
+	font-size: 2.5em;
+	font-weight: 300;
+	width: 90%;
+	height: 50px;
+	margin:0 auto 0.5em;
+	text-shadow: -2px 2px 5px black;
+	text-align: center;
+
+}
+
+h2
+{
+	font-family: 'Lato', sans-serif;
+	color: #ddd;
+	font-size: 1.5em;
+	font-weight: 600;
+	width: 90%;
+	height: 50px;
+	margin:0 auto 0.5em;
+	text-shadow: -2px 2px 5px black;
+	text-align: center;
+}
+
+p
+{
+	font-family: 'Lato', sans-serif;
+	color: #ddd;
+	font-size: 1.3em;
+	font-weight: 600;
+	width: 75%;
+	height: auto;
+	margin:0 auto 0.5em;
+	text-shadow: -2px 2px 5px black;
+	text-align: center;
+}
+
+.contConsult
+{
+	width: 100%;
+}
+
+/*Estilos respuesta consulta*/
+
+main .panel .contenedorTxt
+{
+	width: 90%;
+	height: 40%;
+	margin: 0 auto;
+	/*border: 2px solid black;*/
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+
+main .panel .contenedorTxt h4, main .panel .contenedorTxt p, main .panel form label
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	opacity: 0.6;
+	text-shadow: -1px 1px 2px black;
+}
+
+main .panel .contenedorTxt h4
+{
+	margin: 0 auto 0.7em;
+	font-weight: normal; 
+}
+
+main .panel .contenedorTxt p
+{
+	text-align: justify;
+	margin: 0.2em 0 0.8em;
+}
+
+main .panel form
+{
+	width: 90%;
+	height: 45%;
+	/*border: 2px solid black;*/
+	margin: 0.5em auto;
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+
+main .panel form label
+{
+	/*width: 100%;*/
+	display: block;
+	margin-bottom: 0.2em;
+}
+
+main .panel form textarea
+{
+	resize: none;
+	height: 6em;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.4em 0.6em;
+	margin: 0.5em auto;
+
+	border: 1px solid #999;
+	border-radius: 5px;
+
+	background-color: rgba(221, 221, 221,0.5);
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+
+	box-shadow: 0 0 10px #4d5446;
+}
+
+main .panel form input[type="text"]
+{
+	height: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.4em 0.6em;
+	margin: 0.5em auto;
+
+	border: 1px solid #999;
+	border-radius: 5px;
+
+	background-color: rgba(221, 221, 221,0.5);
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+
+	box-shadow: 0 0 10px #4d5446;
+}
+
+
+main .panel form input[type="submit"]
+{
+	width: 5em;
+	height: 2.5em;
+
+	padding: 0.2em;
+
+	border: none;
+	border-radius: 5px;
+	outline: none;
+
+	background-color: #3d3f2f;
+	
+	text-align: center;
+
+  	font-family: 'Bree Serif', serif;
+  	font-size: 1em;
+
+  	text-decoration: none;
+  	color: #D1CECD;
+
+  	box-sizing: border-box;
+
+  	cursor: pointer;
+}
+
+main .panel form input[type="submit"]:hover
+{
+  	background-color: #24261c;
+  	transition: 0.7s ease;
+}
+
+
+main .panel form .error
+{
+	font-family: 'Lato', sans-serif;
+	color: #d6250a;
+	font-size: 1em;
+	text-shadow: -1px 1px 2px black;
+}

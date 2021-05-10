@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?693dxs');
+  src:  url('fonts/icomoon.eot?693dxs#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?693dxs') format('truetype'),
+    url('fonts/icomoon.woff?693dxs') format('woff'),
+    url('fonts/icomoon.svg?693dxs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Comienzo Formulario */
+
+.formulario
+{
+	width: 60%;
+	margin: 1em auto 2em;
+	overflow: hidden;
+	
+	/*border: 2px solid black;*/
+
+	padding: 0.7em;
+}
+
+label
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	color: #ddd;
+
+	vertical-align: top;
+	
+	display: inline-block;
+
+	text-shadow: -1px 2px 3px black;
+}
+
+.formulario input, .formulario textarea
+{
+	
+	width: 100%;
+	height: 2.5em;
+	box-sizing: border-box;
+	padding: 0.4em 0.6em;
+	margin: 0.5em auto;
+
+	border: 1px solid #999;
+	border-radius: 5px;
+
+	background-color: rgba(221, 221, 221,0.5);
+	font-size: 1.2em;
+
+	box-shadow: 0 0 10px #4d5446;
+
+}
+
+.formulario textarea
+{
+	height: 8em;
+	resize: none;
+}
+
+.formulario .contCampo
+{
+	padding: 0.5em;
+}
+
+.formulario input[type="submit"]
+{
+	width: 7em;
+	height: 3em;
+
+	padding: 0.2em;
+
+	border: none;
+	border-radius: 5px;
+	outline: none;
+
+	background-color: #54584D;
+	
+	text-align: center;
+
+  	font-family: 'Bree Serif', serif;
+  	font-size: 1em;
+
+  	text-decoration: none;
+  	color: #D1CECD;
+
+  	box-sizing: border-box;
+
+  	cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover
+{
+  	box-shadow: 0 0 1px #2c3028;
+  	background-color: #42443d;
+  	text-shadow: 2px 1px black;
+
+  	transition: 0.7s;
+}
+
+.formulario .acciones
+{
+	text-align: center;
+}
+
+
+/* Comienzo seccion informacion */
+
+.info h2
+{
+	font-family: 'Lato', sans-serif;
+	color: #ddd;
+	font-size: 1.5em;
+	font-weight: 300;
+	width: 50%;
+	height: 50px;
+	margin: 0 auto 0.5em;
+	text-shadow: -1px 1px 5px black;
+	text-align: center;
+	line-height: 35px;
+
+	margin-bottom: 2em;
+
+}
+
+.info a
+{
+	text-decoration: none;
+	color: #ddd;
+}
+
+.info a:hover
+{
+	color: #999;
+	transition: 0.5s ease;
+}
+
+/* Botones redes sociales */
+.info .iconos a
+{
+	text-decoration: none;
+	color: #313438;
+}
+
+.info .iconofb, .info .iconotw, .info .iconoig
+{
+	width: 50px;
+	height: 50px;
+
+	background-color: #ddd;
+
+	border-radius: 5px;
+
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+
+	display: inline-block;
+	
+	box-sizing: border-box;
+
+	margin-right: 0.5em;
+}
+
+.info .iconoig:hover
+{
+	color: white;
+	background: rgba(255,93,177,1);
+	background: -moz-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(232,198,25,1) 0%, rgba(239,1,124,1) 65%, rgba(102,40,100,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,93,177,1)), color-stop(0%, rgba(232,198,25,1)), color-stop(65%, rgba(239,1,124,1)), color-stop(100%, rgba(102,40,100,1)));
+	background: -webkit-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(232,198,25,1) 0%, rgba(239,1,124,1) 65%, rgba(102,40,100,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(232,198,25,1) 0%, rgba(239,1,124,1) 65%, rgba(102,40,100,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(232,198,25,1) 0%, rgba(239,1,124,1) 65%, rgba(102,40,100,1) 100%);
+	background: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(232,198,25,1) 0%, rgba(239,1,124,1) 65%, rgba(102,40,100,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#662864', GradientType=1 );
+
+	transition: 0.5s ease;
+}
+
+.info .iconofb:hover
+{
+	background-color: #355b93;
+
+	transition: 0.5s ease;
+}
+
+.info .iconotw:hover
+{
+	background-color: #819ec4;
+
+	transition: 0.5s ease;
+}
+
+.info .iconotw:hover a, .info .iconofb:hover a, .info .iconoig:hover a
+{
+	color: #ddd;
+	transition: 0.5s ease;
+}
+
+.info .iconos
+{
+	width: 200px;
+	margin: 0 auto;
+}
+
+
+/* Iconos redes sociales (texto) */
+
+.icon-fb:before, .icon-ig:before, .icon-tw:before
+{
+	font-family: 'icomoon';
+	font-size: 40px;
+}
+
+.icon-fb:before {
+  content: "\ea90";
+}
+.icon-ig:before {
+  content: "\ea92";
+}
+.icon-tw:before {
+  content: "\ea96";
+}
+
+.menErrorGeneral
+{
+	width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.menErrorGeneral .error
+{
+	font-family: 'Lato', sans-serif;
+	color: #d6250a;
+	font-size: 1.3em;
+	text-shadow: -1px 1px 2px black;
+}
+
+.menError
+{
+	width: 300px;
+	text-align: left;
+}
+
+.menError .error
+{
+	font-family: 'Lato', sans-serif;
+	color: #d6250a;
+	font-size: 1em;
+	text-shadow: -1px 1px 2px black;
+}
+
+
+@media screen and (max-width: 768px)
+{
+	h2
+	{
+		line-height: 1em;
+	}
+
+	.formulario
+	{
+		width: 80%;
+	}
+
+	.info, .info h2
+	{
+		height: auto;
+	}
+
+	.info h2
+	{
+		width: 70%;
+	}
+
+	.info .iconos
+	{
+		margin-bottom: 2em;
+		overflow: hidden;
+	}
+}
+
+
+@media screen and (max-width: 480px)
+{
+}
+
+@media screen and (max-width: 415px)
+{
+}
+
+@media screen and (max-width: 375px)
+{
+}
+
+@media screen and (max-width: 360px)
+{
+}
+
+@media screen and (max-width: 320px)
+{
+}

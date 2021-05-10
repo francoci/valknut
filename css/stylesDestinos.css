@@ -1,0 +1,424 @@
+.view 
+{
+   width: 300px;
+   height: 200px;
+
+   /*margin: 10px;*/
+   float: left;
+   border: 10px solid #ddd;
+
+   overflow: hidden;
+   position: relative;
+
+   text-align: center;
+
+   cursor: default;
+
+}
+
+
+.view:nth-child(odd)
+{
+   margin: 20px 50px 20px 110px;
+}
+
+.view:nth-child(even)
+{
+   margin: 20px 110px 20px 50px;
+}
+
+.destino1
+{
+   background: #fff url(../img/destinos/dubaiFondo.jpg) no-repeat center center;
+}
+
+.destino2
+{
+   background: #fff url(../img/destinos/nepalFondo3.jpg) no-repeat center center;
+}
+
+.destino3
+{
+   background: #fff url(../img/destinos/egiptoFondo.jpg) no-repeat center center;
+}
+
+.destino4
+{
+   background: #fff url(../img/destinos/indiaFondo2.jpg) no-repeat center center;
+}
+
+.destino5
+{
+   background: #fff url(../img/destinos/turquiaFondo.jpg) no-repeat center center;
+}
+
+.destino6
+{
+   background: #fff url(../img/destinos/bhutanFondo.jpg) no-repeat center center;
+}
+
+.view .mask
+{
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img 
+{
+   display: block;
+   position: relative;
+}
+
+.view .mask h2 
+{
+   width: 280px;
+   height: 60px;
+   padding: 10px;
+   margin: 50px auto 10px auto;
+
+   font-family: 'Lato', sans-serif;
+   color: white;
+
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-size: 3.5em;
+
+   line-height: 60px
+   text-align: center;
+   vertical-align: middle;
+
+   font-weight: 900;
+
+   text-align: center;
+
+}
+
+
+.view a.info 
+{
+   width: 30%;
+   margin: -40px 0 0 -10px;
+   display: inline-block;
+
+   text-decoration: none;
+   padding: 0.5em;
+
+   color: white;
+   /*background-color: #a4a584;*/
+
+   font-family: 'Bree Serif', serif;
+   font-size: 1.2em;
+
+   text-shadow: -1px 1px 1px black;
+
+   /*-webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;*/
+
+   transition: 0.5s ease;
+}
+
+.view a.info:hover 
+{
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+
+   border-radius: 5px;
+   /*border: 2px solid white;*/
+
+   background-color: #7e7f66;
+}
+
+.view-fifth img 
+{
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.view-fifth .mask 
+{
+   -webkit-transform: translateX(-300px);
+   -moz-transform: translateX(-300px);
+   -o-transform: translateX(-300px);
+   -ms-transform: translateX(-300px);
+   transform: translateX(-300px);
+
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+
+.view-fifth:hover .mask 
+{
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+}
+
+.view-fifth:hover img 
+{
+   -webkit-transform: translateX(300px);
+   -moz-transform: translateX(300px);
+   -o-transform: translateX(300px);
+   -ms-transform: translateX(300px);
+   transform: translateX(300px);
+}
+
+
+/*@media screen and (max-width: 1024px)
+{
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}*/
+
+
+@media screen and (max-width: 768px)
+{
+   .destinos
+   {
+      max-width: 768px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .view
+   {
+      /*float: none;*/
+   }
+
+   .view:nth-child(odd)
+   {
+      margin: 0.5em 1em 1.5em 3.8em;
+   }
+
+   .view:nth-child(even)
+   {
+      margin: 0.5em 0 1.5em 0;
+   }
+
+   .view:nth-child(5)
+   {
+      margin-bottom: 3em;
+   }
+
+   .view:nth-child(6)
+   {
+      margin-bottom: 3em;
+   }
+
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}
+
+
+@media screen and (max-width: 480px)
+{
+
+   .destinos
+   {
+      max-width: 480px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .view:nth-child(odd)
+   {
+      margin: 1em 0 1em 85px;
+   }
+
+   .view:nth-child(even)
+   {
+      margin: 1em 0 1em 85px;
+   }
+
+   .view:nth-child(5)
+   {
+      margin: 1em 0 1em 85px;
+   }
+
+   .view:nth-child(6)
+   {
+      margin: 1em 0 3em 85px;     
+   }
+
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}
+
+@media screen and (max-width: 415px)
+{
+   .destinos
+   {
+      max-width: 415px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .view:nth-child(odd)
+   {
+      margin: 1em 0 1em 50px;
+   }
+
+   .view:nth-child(even)
+   {
+      margin: 1em 0 1em 50px;
+   }
+
+   .view:nth-child(5)
+   {
+      margin: 1em 0 1em 50px;
+   }
+
+   .view:nth-child(6)
+   {
+      margin: 1em 0 3em 50px;     
+   }
+
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}
+
+@media screen and (max-width: 375px)
+{
+   .destinos
+   {
+      max-width: 375px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .view:nth-child(odd)
+   {
+      margin: 1em 0 1em 30px;
+   }
+
+   .view:nth-child(even)
+   {
+      margin: 1em 0 1em 30px;
+   }
+
+   .view:nth-child(5)
+   {
+      margin: 1em 0 1em 30px;
+   }
+
+   .view:nth-child(6)
+   {
+      margin: 1em 0 3em 30px;     
+   }
+
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}
+
+@media screen and (max-width: 360px)
+{
+   .destinos
+   {
+      max-width: 360px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .view:nth-child(odd)
+   {
+      margin: 1em 0 1em 20px;
+   }
+
+   .view:nth-child(even)
+   {
+      margin: 1em 0 1em 20px;
+   }
+
+   .view:nth-child(5)
+   {
+      margin: 1em 0 1em 20px;
+   }
+
+   .view:nth-child(6)
+   {
+      margin: 1em 0 3em 20px;     
+   }
+
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}
+
+@media screen and (max-width: 320px)
+{
+   .destinos
+   {
+      max-width: 320px;
+      height: auto;
+      overflow: hidden;
+   }
+
+   .view:nth-child(odd)
+   {
+      margin: 1em 0 1em 10px;
+   }
+
+   .view:nth-child(even)
+   {
+      margin: 1em 0 1em 10px;
+   }
+
+   .view:nth-child(5)
+   {
+      margin: 1em 0 1em 10px;
+   }
+
+   .view:nth-child(6)
+   {
+      margin: 1em 0 3em 10px;     
+   }
+
+   .view
+   {
+      width: 280px;
+      height: 180px;
+   }
+
+   .view .mask h2 
+   {
+      width: 260px;
+      margin-left: 0;
+   }
+
+   .view a.info
+   {
+      border-radius: 5px;
+      background-color: #7e7f66;
+   }
+}
